@@ -5,9 +5,21 @@ let pokemonList = [
     { name: 'Nidoran', height: 0.4, types: ['poison'] },
     { name: 'Charizard', height: 1.7, types: ['flying', 'fire'] }
 ];
-for (let i = 0; i < pokemonList.length; i++) {
-    document.write('<br>' + pokemonList[i].name + (' , height: ') + pokemonList[i].height);
-    if (pokemonList[i].height >= 2) {
-        document.write(' - Wow, that\'s big!');
+
+// Part 1: Use a forEach() function instead of the for loop 
+
+function myPokemonPrintout(pokemon) {
+    document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + ')');
+    //Add a conditional to show big Pokemon
+    if (pokemon.height >= 7) {
+        document.write(' - Wow! That\'s big!');
     }
+    document.write('</li>');
 }
+
+document.write('<ul>');
+//Call forEach function to show Pokemon list
+pokemonList.forEach(myPokemonPrintout);
+document.write('</ul>');
+
+// Part 2: IIFE
