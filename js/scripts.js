@@ -16,29 +16,37 @@ let pokemonRepository = (function() {
         return pokemonList;
     }
 
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector(".pokemon-list");
+        let listpokemon = document.createElement("li");
+        let button = document.createElement("button");
+        button.innerText = pokemon.name;
+        button.classList.add("button-class");
+        listpokemon.appendChild(button);
+        pokemonList.appendChild(listpokemon);
+        // add event, console the name of pokemon
+        button.addEventListener('click', function(event) {
+            showDetails(pokemon.name);
+        });
+
+    }
+    // showDetails: showDetails
+    function showDetails(pokemon) {
+        console.log(pokemon);
+    }
+
     return {
         add: add,
-        getAll: getAll
+        getAll: getAll,
+        addListItem: addListItem
     };
 })();
 
-// Part 1: Use a forEach() function instead of the for loop 
-
-function myPokemonPrintout(pokemon) {
-    document.write('<li>' + pokemon.name + ' (height: ' + pokemon.height + ')');
-    //Add a conditional to show big Pokemon
-    if (pokemon.height >= 7) {
-        document.write(' - Wow! That\'s big!');
-    }
-    document.write('</li>');
-}
-
-document.write('<ul>');
-
 // add pokemon
 pokemonRepository.add({ name: 'Pikachu', height: 0.4, type: ['electric'] });
+console.log(pokemonRepository.getAll());
 
 //Call forEach function to show Pokemon list
-pokemonRepository.getAll().forEach(myPokemonPrintout);
-
-document.write('</ul>');
+pokemonRepository.getAll().forEach(function(pokemon) {
+    pokemonRepository.addListItem(pokemon);
+});
