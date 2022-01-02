@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Simple JS App</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;900&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
-
 <body>
-    <h1>Pokedex</h1>
-    <ul class="pokemon-list"></ul>
-    <strong>
-        <script src="js/promise-polyfill.js"></script>
-        <script src="js/fetch.umd.js"></script>
-        <script src="js/scripts.js"></script>
-
-    </strong>
+    <div class="background">
+        <h1><span>Pokedex</span></h1>
+        <div id='modal-container'>
+        </div>
+        <div class='center'>
+            <ul class='pokemon-list'>
+                <li>
+                </li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <script src="js/promise-polyfill.js"></script>
+    <script src="js/fetch-polyfill.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
