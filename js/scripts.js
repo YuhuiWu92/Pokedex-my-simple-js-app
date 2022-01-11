@@ -110,7 +110,6 @@ let pokemonRepository = (function() {
 
         $('#exampleModal').modal();
     }
-
     // adds search element to the page
     $(document).ready(function() {
         $("#search-pokemon").on("input", function() {

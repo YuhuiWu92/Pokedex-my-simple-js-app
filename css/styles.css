@@ -6,6 +6,13 @@
     justify-content: space-between;
 }
 
+.btn-outline-success {
+    margin-left: 20px;
+    border: none;
+    font: bold;
+    color: white;
+}
+
 #intro {
     font-family: monospace;
     text-align: center;
@@ -38,7 +45,7 @@
     border-radius: 10px;
 }
 
-.btn {
+li .btn {
     border: 1px solid green;
     background-color: #e7e7e7;
     margin: 10px;
