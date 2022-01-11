@@ -1,0 +1,100 @@
+.collapse {
+    flex: 0 1 200px
+}
+
+.navbar {
+    justify-content: space-between
+}
+
+.btn-outline-success {
+    margin-right: 20px;
+    border: none;
+    font: bold;
+    color: #fff
+}
+
+#intro {
+    font-family: monospace;
+    text-align: center
+}
+
+#pokedex-title {
+    text-align: center
+}
+
+.pokemon-list {
+    list-style-type: none
+}
+
+.pokemon-list li {
+    position: relative
+}
+
+.modal-content {
+    border: 2px solid;
+    border-color: #5b6b4a;
+    background-color: #a2bfc8;
+    text-align: center
+}
+
+.modal-content p {
+    border: 1px solid #4e584e;
+    width: 100px;
+    text-align: center;
+    color: #2b2b2b;
+    border-radius: 10px
+}
+
+li .btn {
+    border: 1px solid green;
+    background-color: #e7e7e7;
+    margin: 10px;
+    transition-duration: .4s
+}
+
+.btn::first-line {
+    text-transform: uppercase
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .5;
+    color: inherit;
+    background-color: #b3bfea
+}
+
+.btn-secondary {
+    background-color: inherit;
+    color: inherit
+}
+
+.btn-img {
+    display: block;
+    width: 125px;
+    height: 125px
+}
+
+.background::after {
+    content: "";
+    background-image: url('https://images6.alphacoders.com/613/613932.png');
+    opacity: .4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1
+}
+
+@media (max-width:1024px) {
+    body {
+        max-width: 100%
+    }
+}
+
+@media (max-width:600px) {
+    .modal.modal-content {
+        width: 90%;
+        max-width: 90%
+    }
+}
