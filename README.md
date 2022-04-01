@@ -1,4 +1,4 @@
-# My Simple App
+# Pokedex--My Simple App
 a small Pokémon-Web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of 150 Pokémons and their basic informations..
 
 **Version 1.1.1**
