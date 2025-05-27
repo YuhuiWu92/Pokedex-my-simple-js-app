@@ -1,31 +1,50 @@
-# Pokedex--My Simple App
+# Pokedex – My Simple JS App
 
-a small Pokémon-Web application with HTML, CSS, and JavaScript that loads data from an external API and enables the viewing of 150 Pokémons and their basic informations.
+A simple Pokémon web application built with **HTML**, **CSS**, and **JavaScript**.  
+It fetches data from an external API and displays a list of 150 Pokémons with basic information.
 
-![This is an image](/img/Pokedex.png)
+![Pokedex Screenshot](/img/Pokedex.png)
 
-## My Page
+---
 
-welcome to my page:
-https://yuhuiwu92.github.io/Pokedex-my-simple-js-app/
+## 🌐 Live Demo
 
-## My Code
+Check out the live version hosted on GitHub Pages:  
+👉 [https://yuhuiwu92.github.io/Pokedex-my-simple-js-app/](https://yuhuiwu92.github.io/Pokedex-my-simple-js-app/)
 
-here you can find my code:
-Code and document for the using of this App
+---
 
-https://github.com/YuhuiWu92/Pokedex-my-simple-js-app
+## 💻 Code Repository
 
-Code and document for the using of this App
+Browse the source code on GitHub:  
+👉 [https://github.com/YuhuiWu92/Pokedex-my-simple-js-app](https://github.com/YuhuiWu92/Pokedex-my-simple-js-app)
 
-## Project Dependencies
+---
 
-HTML5, CSS3, ES6, jQuery, Bootstrap, AJAX
+## 🚀 Run with Docker
 
-### API
+You can run this project locally using Docker. This makes it easy to deploy and test in a clean, consistent environment.
 
-https://pokeapi.co/api/v2/pokemon
+### 🧱 Build Docker Image
 
-## License & Copyright
+```bash
+docker build -t pokedex .
 
-©Yuhui Wu
+▶️ Run the Container
+
+docker run -d -p 8080:80 pokedex
+
+Then open your browser and go to:
+👉 http://localhost:8080
+
+📦 Tech Stack & Dependencies
+HTML5, CSS3, JavaScript (ES6)
+
+jQuery, Bootstrap, AJAX
+
+External API: https://pokeapi.co/api/v2/pokemon
+
+📄 License
+© Yuhui Wu
+This project is licensed for educational and demonstration purposes.
+```
